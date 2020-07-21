@@ -21,14 +21,44 @@ div.navbar li{
 }
 div.navbar a{
     display: block;
-    color: white;
-    text-align: center;
+    color: #FFF;
+    text-align: left;
     padding: 14px 16px;
     font-family: 'Monserat';
     text-decoration: none;
+    opacity: 0.7;
+    transition: 0.3s;
 }
-div.navbar a:hover {
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #111;
+    opacity: 1;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: 111;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.dropdown-content a:hover {
+    background-color: #444;
+    opacity: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 /*Background Banner*/
 #background-banner{
