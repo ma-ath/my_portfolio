@@ -16,6 +16,9 @@ div.navbar ul{
     overflow: hidden;
     background-color: #333;
 }
+#activate{
+    background-color: black;
+}
 div.navbar li{
     float: left;
 }
