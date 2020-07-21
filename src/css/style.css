@@ -1,0 +1,141 @@
+/*Apply to ALL*/
+@font-face {
+    font-family: 'Monserat';
+    src:    url('../fonts/montserrat-regular-webfont.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Montserrat-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+/*Nav bar CSS*/
+div.navbar ul{
+    list-style-type: none;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+div.navbar li{
+    float: left;
+}
+div.navbar a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Monserat';
+    text-decoration: none;
+}
+div.navbar a:hover {
+    background-color: #111;
+}
+/*Background Banner*/
+#background-banner{
+    max-width: 100%;
+
+    /* Parallax effect */
+  
+    background-image: url("../img/Rio-De-Janeiro-Wallpaper-Free.jpg");
+
+    /* Set a specific height */
+    height: 300px;
+      
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+
+}
+@media only screen and (max-device-width: 1024px) {
+    #background-banner {
+        background-attachment: scroll;
+    }
+}
+
+/*Image*/
+#myimage{
+    border: 3px solid #333;
+    border-radius: 50%;
+    padding: 0px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+
+/*About-me article*/
+div.aboutme h1  {
+    color: darkred;
+    font-family: 'Monserat';
+    font-size: 300%;
+    text-align: center;
+}
+div.aboutme article{
+    display: block;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Monserat';
+    font-size: 100%;
+    width: 50%;
+
+    overflow: hidden;
+}
+
+/*footer*/
+footer.footer ul, p{
+    display: inline-flex;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+    list-style: none;
+}
+footer.footer a{
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+footer.footer a:hover{
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+} 
+footer.footer li:hover ~ li p{
+    animation: wave-animation 0.3s infinite;
+}
+footer.footer div {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    background-color: #333;
+    line-height: 1.3;
+}
+
+@media (min-width: 500px) {
+    div ul{
+    grid-auto-flow: column;
+   }
+}
+
+@keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+}
