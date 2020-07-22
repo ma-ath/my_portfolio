@@ -121,9 +121,22 @@ div.aboutme article{
     text-align: center;
     font-family: 'Monserat';
     font-size: 100%;
-    width: 50%;
 
     overflow: hidden;
+}
+ul.gallery {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: initial;
+}
+ ul.gallery li {
+    float: left;
+}
+
+ ul.gallery img {
+    display: block;
+    padding: 2em;
 }
 
 /*footer*/
